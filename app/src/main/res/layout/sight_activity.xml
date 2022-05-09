@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/third_lighter">
+
+    <TextView
+        android:id="@+id/sightTitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/third"
+        android:fontFamily="@font/exo2_mariable_font_wght"
+        android:gravity="center"
+        android:text="@string/sight"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/sightSaveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sightTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/sightTitleInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_sight_title_input"
+                android:ems="10"
+                android:fontFamily="@font/exo2_semi_bold"
+                android:hint="@string/sight_name"
+                android:inputType="textImeMultiLine"
+                android:padding="12dp"
+                android:textColor="@color/additional_dark"
+                android:textColorHint="@color/black_hint" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/sightDescriptionInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/background_sight_description_input"
+                android:ems="10"
+                android:fontFamily="@font/exo2_semi_bold"
+                android:gravity="start"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:minHeight="300dp"
+                android:padding="8dp"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hint" />
+
+            <RadioGroup
+                android:id="@+id/sightRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/sightRadioCurrentLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:button="@drawable/ic_radio_button"
+                    android:checked="false"
+                    android:fontFamily="@font/exo2_semi_bold"
+                    android:text="@string/current_location"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/sightRadioCoordinates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:button="@drawable/ic_radio_button"
+                    android:checked="true"
+                    android:fontFamily="@font/exo2_semi_bold"
+                    android:text="@string/coordinates"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/sightLongitudeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/background_sight_coordinate"
+                android:ems="10"
+                android:fontFamily="@font/quicksand_regular"
+                android:hint="@string/longitude"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hint" />
+
+            <EditText
+                android:id="@+id/sightLatitudeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/background_sight_coordinate"
+                android:ems="10"
+                android:fontFamily="@font/quicksand_regular"
+                android:hint="@string/latitude"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hint" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sightSaveBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_sight_button"
+        android:fontFamily="@font/exo2_mariable_font_wght"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sightCancelBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_sight_button"
+        android:fontFamily="@font/exo2_mariable_font_wght"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

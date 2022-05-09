@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TourismAsk" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="NavigationTheme" parent="Theme.TourismAsk">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="NavigationMenuItemsTextAppearance">
+        <item name="fontFamily">@font/philosopher_bold_italic</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="CustomAlertDialog">
+        <item name="android:background">@color/main</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+</resources>

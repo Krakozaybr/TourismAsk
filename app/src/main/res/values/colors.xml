@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_hint">#AA000000</color>
+    <color name="white_hint">#CCFFFFFF</color>
+
+    <!--    Основной Цвет   -->
+    <color name="main">#EE8B00</color>
+    <color name="main_darker">#BF8830</color>
+    <color name="main_dark">#A66500</color>
+    <color name="main_lighter">#FFB540</color>
+    <color name="main_light">#FFC973</color>
+
+    <!--    Вторичный Цвет A   -->
+    <color name="second">#FFC700</color>
+    <color name="second_darker">#CFB141</color>
+    <color name="second_dark">#A68100</color>
+    <color name="second_lighter">#FFD540</color>
+    <color name="second_light">#FFE073</color>
+
+    <!--    Вторичный Цвет B   -->
+    <color name="third">#FF5C00</color>
+    <color name="third_darker">#BF6430</color>
+    <color name="third_dark">#A63C00</color>
+    <color name="third_lighter">#FF8540</color>
+    <color name="third_light">#FFA573</color>
+
+    <!--    Дополнительный Цвет   -->
+    <color name="additional">#0E53A7</color>
+    <color name="additional_darker">#274E7D</color>
+    <color name="additional_dark">#04346C</color>
+    <color name="additional_lighter">#4284D3</color>
+    <color name="additional_light">#6899D3</color>
+</resources>
